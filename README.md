@@ -12,8 +12,8 @@ Is my bot
 > pkg install ffmpeg
 > pkg install nodejs
 > apt update && apt upgrade
-> git clone https://github.com/raihan765/ICE BEAR
-> cd ICE BEAR
+> git clone https://github.com/raihan765/ICE-BEAR
+> cd ICE-BEAR
 > bash install.sh
 > node index.js
 ```
@@ -42,10 +42,5 @@ Is my bot
 ket : ✅ : aktif
 
 
-
-
-## THANKS TO
-* [`termux-whatsapp-bot`](https://github.com/fdciabdul/termux-whatsapp-bot)
-
 ## DONASI
-* Gopay : 081271699856 Reuz
+* Pulsa : wa.me/6281933151460
