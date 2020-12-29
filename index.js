@@ -93,7 +93,7 @@ var str = numArray.join("");
 console.log(str)
 const group = await conn.groupCreate (nama, str)
 console.log ("Grup telah dibuat dengan id: " + group.gid)
-conn.sendMessage(group.gid, "Punye gopud!", MessageType.extendedText) // say hello to everyone on the group
+conn.sendMessage(group.gid, "Punten gopud!", MessageType.extendedText) // say hello to everyone on the group
 
 }
 //chat
