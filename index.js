@@ -62,11 +62,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@reuz.id')
+conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@raihan_mn12')
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@reuz.id`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@raihan_mn12`)
 })
 
 conn.on('message-new', async(m) =>
@@ -93,21 +93,21 @@ var str = numArray.join("");
 console.log(str)
 const group = await conn.groupCreate (nama, str)
 console.log ("Grup telah dibuat dengan id: " + group.gid)
-conn.sendMessage(group.gid, "Halo semua!!!", MessageType.extendedText) // say hello to everyone on the group
+conn.sendMessage(group.gid, "Punye gopud!", MessageType.extendedText) // say hello to everyone on the group
 
 }
 //chat
-if (text == 'halo')
+if (text == 'P')
 {
-conn.sendMessage(id, tambahan.halo ,MessageType.text);
+conn.sendMessage(id, tambahan.P ,MessageType.text);
 }
-else if (text == 'hai')
+else if (text == 'PAKE SALAM GOBL*K!')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
-else if (text == 'assalamualaikum')
+else if (text == 'tayo:V')
 {
-conn.sendMessage(id, tambahan.ass ,MessageType.text);
+conn.sendMessage(id, tambahan.hai ,MessageType.text);
 }
 else if (text == 'bro')
 {
@@ -424,7 +424,7 @@ const get = require('got')
     var meninggal = (body[0]['meninggal']);
     var dirawat = (body[0]['dirawat']);
     console.log(body[0]['name'])
-    conn.sendMessage(id,`😭🤒DATA WABAH COVID-19 TERBARU DI INDONESIA😔😊\n\n😔Positif ==> ${positif} \n😊Sembuh ==> ${sembuh} \n😭Meninggal ==> ${meninggal}\n🤒Dirawat ==> ${dirawat}`, MessageType.text);
+    conn.sendMessage(id,`😭🤒DATA WABAH COVID-19 TERBARU DI INDONESIA😔😊\n\n😔Positif ==> ${positif} \n😊Sembuh ==> ${sembuh} \n💀Meninggal ==> ${meninggal}\n🤒Dirawat ==> ${dirawat}`, MessageType.text);
 }
    if (text.includes("!quotes"))
    {
