@@ -1,10 +1,6 @@
-## REUZSC
-BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
+## ICE BEAR
 
-
-
-
-
+Is my bot
 
 
 ## CARA INSTALL
@@ -16,8 +12,8 @@ BOT WHATSAPP YANG BISA DIGUNAKAN DI TERMUX
 > pkg install ffmpeg
 > pkg install nodejs
 > apt update && apt upgrade
-> git clone https://github.com/benisadewa/reuzsc
-> cd reuzsc
+> git clone https://github.com/raihan765/ICE BEAR
+> cd ICE BEAR
 > bash install.sh
 > node index.js
 ```
