@@ -103,7 +103,7 @@ conn.sendMessage(id, tambahan.P ,MessageType.text);
 }
 else if (text == 'PAKE SALAM GOBL*K!')
 {
-conn.sendMessage(id, tambahan.hai ,MessageType.text);
+conn.sendMessage(id, tambahan.Hai ,MessageType.text);
 }
 else if (text == 'tayo:V')
 {
