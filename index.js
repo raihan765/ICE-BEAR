@@ -13,9 +13,11 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = '♦ICE BEAR BOT♦'; 
-const instagram = 'https://instagram.com/raihan_mn12'; 
+const BotName = 'NAMA BOTMU'; 
+const instagram = 'LINK INSTAGRAMU'; 
+const telegram = 'LINK TELEMU'; 
 const kapanbotaktif = 'KETIKA HANYA DIAKTIFKAN'; 
+const youtube = 'LINK YTMU';
 //const grupch1 = 'belum ada grup'; 
 //const grupch2 = 'belum ada grup' ; 
 const
@@ -62,11 +64,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@raihan_mn12')
+conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@reuz.id')
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@raihan_mn12`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@reuz.id`)
 })
 
 conn.on('message-new', async(m) =>
@@ -93,21 +95,21 @@ var str = numArray.join("");
 console.log(str)
 const group = await conn.groupCreate (nama, str)
 console.log ("Grup telah dibuat dengan id: " + group.gid)
-conn.sendMessage(group.gid, "Punten gopud!", MessageType.extendedText) // say hello to everyone on the group
+conn.sendMessage(group.gid, "Halo semua!!!", MessageType.extendedText) // say hello to everyone on the group
 
 }
 //chat
-if (text == 'P')
+if (text == 'halo')
 {
-conn.sendMessage(id, tambahan.P ,MessageType.text);
+conn.sendMessage(id, tambahan.halo ,MessageType.text);
 }
-else if (text == 'PAKE SALAM GOBL*K!')
-{
-conn.sendMessage(id, tambahan.Hai ,MessageType.text);
-}
-else if (text == 'tayo:V')
+else if (text == 'hai')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
+}
+else if (text == 'assalamualaikum')
+{
+conn.sendMessage(id, tambahan.ass ,MessageType.text);
 }
 else if (text == 'bro')
 {
@@ -424,7 +426,7 @@ const get = require('got')
     var meninggal = (body[0]['meninggal']);
     var dirawat = (body[0]['dirawat']);
     console.log(body[0]['name'])
-    conn.sendMessage(id,`😭🤒DATA WABAH COVID-19 TERBARU DI INDONESIA😔😊\n\n😔Positif ==> ${positif} \n😊Sembuh ==> ${sembuh} \n💀Meninggal ==> ${meninggal}\n🤒Dirawat ==> ${dirawat}`, MessageType.text);
+    conn.sendMessage(id,`😭🤒DATA WABAH COVID-19 TERBARU DI INDONESIA😔😊\n\n😔Positif ==> ${positif} \n😊Sembuh ==> ${sembuh} \n😭Meninggal ==> ${meninggal}\n🤒Dirawat ==> ${dirawat}`, MessageType.text);
 }
    if (text.includes("!quotes"))
    {
