@@ -13,13 +13,11 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'NAMA BOTMU'; 
-const instagram = 'LINK INSTAGRAMU'; 
-const telegram = 'LINK TELEMU'; 
+const BotName = 'ICE BEAR'; 
+const instagram = 'https://www.instagram.com/raihan_mn12/'; 
 const kapanbotaktif = 'KETIKA HANYA DIAKTIFKAN'; 
-const youtube = 'LINK YTMU';
-//const grupch1 = 'belum ada grup'; 
-//const grupch2 = 'belum ada grup' ; 
+//const grupch1 = 'https://chat.whatsapp.com/H7a8oGzJoPa8h5mvBcRr1n'; 
+//const grupch2 = 'https://chat.whatsapp.com/DsgXccfAg5r1uMRa33ZQaK' ; 
 const
 {
    WAConnection,
@@ -64,7 +62,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@reuz.id')
+conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@raihan_mn12')
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
@@ -95,21 +93,21 @@ var str = numArray.join("");
 console.log(str)
 const group = await conn.groupCreate (nama, str)
 console.log ("Grup telah dibuat dengan id: " + group.gid)
-conn.sendMessage(group.gid, "Halo semua!!!", MessageType.extendedText) // say hello to everyone on the group
+conn.sendMessage(group.gid, "Punten GoFood!", MessageType.extendedText) // say hello to everyone on the group
 
 }
 //chat
-if (text == 'halo')
+if (text == 'P')
 {
-conn.sendMessage(id, tambahan.halo ,MessageType.text);
+conn.sendMessage(id, tambahan.P ,MessageType.text);
 }
-else if (text == 'hai')
+else if (text == 'PAKE SALAM GOBL*K!')
+{
+conn.sendMessage(id, tambahan.Hai ,MessageType.text);
+}
+else if (text == 'tayo:v')
 {
 conn.sendMessage(id, tambahan.hai ,MessageType.text);
-}
-else if (text == 'assalamualaikum')
-{
-conn.sendMessage(id, tambahan.ass ,MessageType.text);
 }
 else if (text == 'bro')
 {
